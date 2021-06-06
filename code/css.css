@@ -8,15 +8,23 @@
 
 body, html {
     height: 100%;
-  }
+}
 
+  
 .parallax {
     top: 0;
-    background-image: url("https://www.w3schools.com/bootstrap4/paris.jpg");
+    background-image: url("https://beacabdan.github.io/nuriaiclaudia/fotos/5.jpg");
     height: 100%; 
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
