@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
 <head>
-<title>Núria i Clàudia!</title>
+    <title>Núria i Clàudia!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
 </head>
 
 <body>
+    <div id="nav-placeholder"></div>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae eius harum alias vel cum? Non, ut aperiam ipsum assumenda repellendus, a tempora quaerat labore accusantium nihil, dolore eaque id?</p>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load(parentURL + "content/nav.html");
+        });
+    </script>
 </body>
 
 </html>
