@@ -1,1 +1,0 @@
-let parentURL = "https://beacabdan.github.io/nuriaiclaudia/"
