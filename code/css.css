@@ -9,7 +9,6 @@
 body, html {
     height: 100%;
 }
-
   
 .parallax {
     top: 0;
@@ -27,4 +26,8 @@ body, html {
     .parallax {
         background-attachment: scroll;
     }
+}
+
+.mt-6 {
+    margin-top: 5rem!important;
 }
