@@ -14,42 +14,55 @@
     <title>Núria i Clàudia!</title>
 </head>
 
-<body>
+<body style="background-color: rgb(207, 197, 209);">
     <div id="nav-placeholder" class="fixed-top"></div>
     
-    <div class="position-absolute top-50 start-50 translate-middle text-center text-light border border-light border-5" style="padding: 50px 100px;">
+    <!-- <div class="position-absolute top-50 start-50 translate-middle text-center text-light border border-light border-5" style="padding: 50px 100px;">
         <h1>Ens casem!</h1>
         <p>16 d'Octubre de 2021</p>
-    </div>
-    
-    <div class="parallax" alt="Foto adorable de Clàudia i Núria juntes."></div>
+    </div> <div class="parallax" alt="Foto adorable de Clàudia i Núria juntes."></div> -->
+
+
     <div class="container mt-6 text-center">
-        <h1>20d 1h 30' 10''</h1>
+        <div class="container mt-6">
+        <div>
+        <div class="row">
+            <img class="col-12 col-md-9 img-fluid" src="http://www.bodanuriaclaudia.com/fotos/6.jpeg">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-6 text-center" style="margin-top: -100px;">
+                <h1 class="bg-light p-5" id="countdown">Ens casem el 16 d'Octubre!</h1>
+            </div>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-arrow-down start-50 translate-middle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+        </svg> -->
+    </div>
         
-        <p>Hola! Per fi ha arribat el dia que tant esperàvem! Després de quasi 9 anys de relació fem realitat un dels nostres somnis: <b>CRIDAR ALS QUATRE VENTS QUE ENS ESTIMEM AMB BOGERIA</b> i ho volem celebrar amb tots vosaltres!
+        <p>Hola!<br>
+            Per fi ha arribat el dia que tant esperàvem! Després de quasi 9 anys de relació farem realitat un dels nostres somnis: CRIDAR ALS QUATRE VENTS QUE ENS ESTIMEM AMB BOGERIA i ho volem celebrar amb tots vosaltres!
             Així que us donem la benvinguda a la pàgina web oficial del nostre casament!
-            Aquí trobareu informació sobre el lloc, la celebració, el menú... Tot el necessari per poder disfrutar de la festa al màxim!
-            Gràcies per arribar fins aquí!
+            Aquí trobareu informació sobre el lloc, la celebració, la música... Tot el necessari per poder gaudir de la festa al màxim!
+            Gràcies per arribar fins aquí!<br>
             Comencem?</p>
 
         <div class="row">
             <div class="col-md-4 text-center">
                 <h1>Quan?</h1>
-                <p>16/10/2021 12am-fins tard.</p>
+                <p>Dissabte 16 d’octubre de 2021<br>
+                    Ens veiem a les 12h30!</p>
             </div>
             <div class="col-md-4 text-center">
                 <h1>On?</h1>
-                <p>Lloc lloc lloc lloc, 01234 lloclloc.</p>
+                <p>Restaurant Selva Negra<br>
+                    Av. Països Catalans 167 Vallirana (Bcn)</p>
             </div>
             <div class="col-md-4 text-center">
                 <h1>Com?</h1>
-                <p>Haureu de portar alguna cosa de color lila en honor a...</p>
+                <p>Recordeu portar alguna cosa lila!<br>
+                    (Una flor al cap, una polsera, una corbata...)</p>
             </div>
         </div>
-
-        <h1>Resum de la jornada</h1>
-        <p>CA. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae eius harum alias vel cum? Non, ut aperiam ipsum assumenda repellendus, a tempora quaerat labore accusantium nihil, dolore eaque id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident nihil eligendi repudiandae a delectus perferendis totam pariatur! Dolorum in repudiandae maiores nam enim! Architecto, doloremque? Harum expedita rerum quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates voluptatem quaerat! Ullam vero unde consequatur hic repudiandae voluptatum rem, sunt amet at nisi neque asperiores ipsam necessitatibus! Quis, suscipit?</p>
-
 
         <div class="row g-2">
             <div class="col-md-4">
@@ -76,6 +89,38 @@
             $("#nav-placeholder").load("http://www.bodanuriaclaudia.com/content/nav.html");
             $("#footer-placeholder").load("http://www.bodanuriaclaudia.com/content/footer.html");
         });
+        $(function () {
+            $("#nav-placeholder").load("http://www.bodanuriaclaudia.com/content/naves.html");
+            $("#footer-placeholder").load("http://www.bodanuriaclaudia.com/content/footer.html");
+        });
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 16, 2021 12:30:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown").innerHTML = "Compte enrere pel casament: " +  days + "d " + hours + "h " + minutes + "' " + seconds + "'' ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Ens casem el 16 d'Octubre!";
+            }
+        }, 1000);
+
     </script>
 </body>
 
