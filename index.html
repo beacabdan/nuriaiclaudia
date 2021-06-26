@@ -16,7 +16,7 @@
 
 <body style="background-color: rgb(207, 197, 209);">
     <div id="nav-placeholder" class="fixed-top"></div>
-    
+
     <!-- <div class="position-absolute top-50 start-50 translate-middle text-center text-light border border-light border-5" style="padding: 50px 100px;">
         <h1>Ens casem!</h1>
         <p>16 d'Octubre de 2021</p>
@@ -24,21 +24,20 @@
 
 
     <div class="container mt-6 text-center">
-        <div class="container mt-6">
         <div>
-        <div class="row">
-            <img class="col-12 col-md-9 img-fluid" src="http://www.bodanuriaclaudia.com/fotos/6.jpeg">
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6 offset-md-6 text-center" style="margin-top: -100px;">
-                <h1 class="bg-light p-5" id="countdown">Ens casem el 16 d'Octubre!</h1>
+            <div class="row">
+                <img class="col-12 col-md-9 img-fluid" src="http://www.bodanuriaclaudia.com/fotos/6.jpeg">
             </div>
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-6 text-center" style="margin-top: -100px;">
+                    <h1 class="bg-light p-5" id="countdown">Ens casem el 16 d'Octubre!</h1>
+                </div>
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-arrow-down start-50 translate-middle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+            </svg> -->
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-arrow-down start-50 translate-middle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-        </svg> -->
-    </div>
-        
+
         <p>Hola!<br>
             Per fi ha arribat el dia que tant esperàvem! Després de quasi 9 anys de relació farem realitat un dels nostres somnis: CRIDAR ALS QUATRE VENTS QUE ENS ESTIMEM AMB BOGERIA i ho volem celebrar amb tots vosaltres!
             Així que us donem la benvinguda a la pàgina web oficial del nostre casament!
@@ -108,7 +107,7 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("countdown").innerHTML = "Compte enrere pel casament: " +  days + "d " + hours + "h " + minutes + "' " + seconds + "'' ";
+            document.getElementById("countdown").innerHTML = "Compte enrere pel casament: " + days + "d " + hours + "h " + minutes + "' " + seconds + "'' ";
 
             // If the count down is over, write some text 
             if (distance < 0) {
