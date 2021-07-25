@@ -54,12 +54,32 @@
             </div>
         </div>
     </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert">
+            <div class="toast-header">
+                <img src="http://www.bodanuriaclaudia.com/fotos/6.jpg" class="rounded-circle me-2" style="height: 1.5em;">
+                <strong class="me-auto">Clàudia i Núria</strong>
+                <small>1 min ago</small>
+                <button id="botontoast" type="button" class="btn-close" data-bs-dismiss="toast" onclick=""></button>
+            </div>
+            <div class="toast-body">
+                Ei, ja has <a href="http://www.bodanuriaclaudia.com/rsvp/">confirmat assistència</a>? Fes-ho, plis. 💜
+            </div>
+        </div>
+    </div>
+
     <div id="footer-placeholder" class="w-100 bg-light mb-0"></div>
     <script>
         $(function () {
             $("#nav-placeholder").load("http://www.bodanuriaclaudia.com/content/nav.html");
             $("#footer-placeholder").load("http://www.bodanuriaclaudia.com/content/footer.html");
+            $("#botontoast").click(function () {
+                $("#liveToast").hide()
+            });
         });
+
+        setTimeout(function() { document.getElementById("liveToast").classList.add("show"); }, 2000);
     </script>
 </body>
 
